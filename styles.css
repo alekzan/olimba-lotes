@@ -1,0 +1,44 @@
+/* styles.css */
+#dropZone {
+    transition: all 0.3s;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed !important;
+    cursor: pointer;
+  }
+  
+  #dropZone.dragover {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-color: #007bff !important;
+  }
+  
+  #batchContent {
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    transition: background-color 0.3s ease;
+  }
+  
+  pre {
+    font-family: monospace;
+  }
+  
+  /* Animation for blinking effect */
+  @keyframes highlight {
+    0% {
+      background-color: #ffffff;
+    }
+    50% {
+      background-color: #ffebee; /* Light red/pinkish for blink */
+    }
+    100% {
+      background-color: #ffffff;
+    }
+  }
+  
+  .highlight-animation {
+    animation: highlight 1s infinite;
+  }
+  
